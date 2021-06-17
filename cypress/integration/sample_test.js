@@ -17,14 +17,22 @@ describe('My First Test', () => {
     })
   })
 
-  describe('My First Test', () => {
+  describe('Opens landing page', () => {
     it('Visits Google main page', () => {
       cy.visit('www.google.com')
     })
   })
 
-  describe('My Secound test', () => {
+  describe('Should approve pop up window', () => {
     it('Agreees witht terms', () => {
         cy.contains('Strinjam se').click()
+    })
+  })
+
+  describe('Selects search field', () => {
+    it('Agreees witht terms', () => {
+        cy.contains('Iskanje').click
+        cy.get('[title="Iskanje"]').type('Hello, World')
+
     })
   })
