@@ -37,4 +37,9 @@ describe('My First Test', () => {
     })
   })
 
-  
+  describe('Search bar interaction', () => {
+    it('Click on search and inserts text', () => {
+        cy.contains('"Hello, World!" program - Wikipedia').should('be.visible')
+        cy.request('http://google.com/search')
+    })
+  })
