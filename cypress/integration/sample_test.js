@@ -10,3 +10,21 @@ describe('My First Test', () => {
       expect(true).to.equal(true)
     })
   })
+
+  describe('My First Test', () => {
+    it('Does not do much!', () => {
+      expect(true).to.equal(false)
+    })
+  })
+
+  describe('My First Test', () => {
+    it('Visits Google main page', () => {
+      cy.visit('www.google.com')
+    })
+  })
+
+  describe('My Secound test', () => {
+    it('Agreees witht terms', () => {
+        cy.contains('Strinjam se').click()
+    })
+  })
