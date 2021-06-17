@@ -11,11 +11,11 @@ describe('My First Test', () => {
     })
   })
 
-  describe('My First Test', () => {
-    it('Does not do much!', () => {
-      expect(true).to.equal(false)
-    })
-  })
+//   describe('My First Test', () => {
+//     it('Does not do much!', () => {
+//       expect(true).to.equal(false)
+//     })
+//   })
 
   describe('Opens landing page', () => {
     it('Visits Google main page', () => {
@@ -33,5 +33,8 @@ describe('My First Test', () => {
     it('Click on search and inserts text', () => {
         cy.contains('Iskanje').click
         cy.get('[title="Iskanje"]').type('Hello, World')
+        cy.contains('Iskanje Google').click()
     })
   })
+
+  
