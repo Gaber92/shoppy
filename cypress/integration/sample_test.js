@@ -29,10 +29,9 @@ describe('My First Test', () => {
     })
   })
 
-  describe('Selects search field', () => {
-    it('Agreees witht terms', () => {
+  describe('Search bar interaction', () => {
+    it('Click on search and inserts text', () => {
         cy.contains('Iskanje').click
         cy.get('[title="Iskanje"]').type('Hello, World')
-
     })
   })
